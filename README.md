@@ -1,3 +1,3 @@
-# starparty
+# STAR PARTY
 
-it's time to party.
+it's time to party

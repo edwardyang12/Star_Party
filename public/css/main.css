@@ -1,0 +1,93 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #000914;
+  text-align: center;
+  font-family: 'Concert One', sans-serif;
+  letter-spacing: 0.05em;
+}
+.noselect {
+  -webkit-user-select: none;  /* Chrome & Safari */
+  -moz-user-select: none;     /* Firefox */
+  -ms-user-select: none;      /* IE */
+  user-select: none;
+}
+input{
+  -webkit-appearance: none;
+}
+
+.sp-title{
+  display: block;
+  text-align: center;
+  margin: 20vh auto calc(10vh - 2vw);
+  font-family: 'Luckiest Guy', sans-serif;
+  color: #eee;
+  font-size: 10vw;
+  letter-spacing: 0.05em;
+}
+
+.info{
+  margin: 1vw 0 1.4vw;
+  font-family: 'Concert One', sans-serif;
+  color: #eee;
+  font-size: 1.6vw;
+}
+
+#joinerr{
+  height: 2vw;
+  font-family: 'Concert One', sans-serif;
+  color: #c66;
+  font-size: 1.6vw;
+}
+.join{
+  font-size: 2.2vw;
+  font-family: 'Concert One', sans-serif;
+  color: #eee;
+}
+#joincode{
+  text-align: center;
+  border: 0;
+  box-shadow: none;
+  padding: 0.4vw;
+  margin-left: 0.3vw;
+  width: 9vw;
+  height: 2.2vw;
+  background-color: #000914;
+  border-bottom: 4px solid #eee;
+  color: #eee;
+  font-size: 2.2vw;
+  font-family: 'Concert One', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#joincode:focus{
+  outline: none;
+}
+
+@keyframes rainbow{
+  0% {background-color: #ff4444; outline-color: #ff4444}
+  16% {background-color: #ffff00; outline-color: #ffff00}
+  33% {background-color: #44ff44; outline-color: #44ff44}
+  50% {background-color: #00ffff; outline-color: #00ffff}
+  66% {background-color: #8888ff; outline-color: #8888ff}
+  83% {background-color: #ff00ff; outline-color: #ff00ff}
+  100% {background-color: #ff4444; outline-color: #ff4444}
+}
+.createbtn{
+  display: block;
+  text-align: center;
+  padding: 0.4vw 0.6vw 1vw 0.6vw;
+  width: 16vw;
+  height: 2.2vw;
+  background-color: #000914;
+  outline: 4px solid #eee;
+  margin: 0 auto;
+  color: #eee;
+  font-size: 2.2vw;
+  cursor: pointer;
+}
+.createbtn:hover{
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 1s linear infinite;
+}
