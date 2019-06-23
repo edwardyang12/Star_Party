@@ -1,21 +1,21 @@
 'use strict';
 
-function moduleAvailable(name){
+function isDebug(){
   try {
-    require.resolve(name);
+    require.resolve('./env');
     return true;
   } catch(e){}
   return false;
 }
 
-var Keys;
-if(moduleAvailable('./keys')){
-  Keys = require('./keys');
+var env;
+if(isDebug()){
+  env = require('./env');
 } else {
-  Keys = process.env;
+  env = process.env;
 }
 
 module.exports = {
-  debug: moduleAvailable('./keys'),
-  port: Keys.PORT || 5000
+  debug: isDebug(),
+  port: env.PORT || 5000
 };

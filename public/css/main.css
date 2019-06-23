@@ -3,7 +3,7 @@ body{
   padding: 0;
   background-color: #000914;
   text-align: center;
-  font-family: 'Concert One', sans-serif;
+  font-family: 'Fredoka One', sans-serif;
   letter-spacing: 0.05em;
 }
 .noselect {
@@ -26,44 +26,6 @@ input{
   letter-spacing: 0.05em;
 }
 
-.info{
-  margin: 1vw 0 1.4vw;
-  font-family: 'Concert One', sans-serif;
-  color: #eee;
-  font-size: 1.6vw;
-}
-
-#joinerr{
-  height: 2vw;
-  font-family: 'Concert One', sans-serif;
-  color: #c66;
-  font-size: 1.6vw;
-}
-.join{
-  font-size: 2.2vw;
-  font-family: 'Concert One', sans-serif;
-  color: #eee;
-}
-#joincode{
-  text-align: center;
-  border: 0;
-  box-shadow: none;
-  padding: 0.4vw;
-  margin-left: 0.3vw;
-  width: 9vw;
-  height: 2.2vw;
-  background-color: #000914;
-  border-bottom: 4px solid #eee;
-  color: #eee;
-  font-size: 2.2vw;
-  font-family: 'Concert One', sans-serif;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-#joincode:focus{
-  outline: none;
-}
-
 @keyframes rainbow{
   0% {background-color: #ff4444; outline-color: #ff4444}
   16% {background-color: #ffff00; outline-color: #ffff00}
@@ -76,11 +38,11 @@ input{
 .createbtn{
   display: block;
   text-align: center;
-  padding: 0.4vw 0.6vw 1vw 0.6vw;
-  width: 16vw;
+  padding: 0.6vw 0.6vw 1.3vw 0.6vw;
+  width: 20vw;
   height: 2.2vw;
   background-color: #000914;
-  outline: 4px solid #eee;
+  outline: 6px solid #eee;
   margin: 0 auto;
   color: #eee;
   font-size: 2.2vw;
