@@ -7,9 +7,9 @@ var config = require('./includes/config'),
 var express = require('express'),
     routes = express(),
     compression = require('compression'),
-    minify = require('minify');
+    minify = require('express-minify');
 
-// TODO: turn this into an environment check and add HTTPS
+// TODO: if secure connection ever becomes necessary, turn this into an environment check and add HTTPS
 var server = require('http').Server(routes);
 
 routes.use(compression());
@@ -18,6 +18,9 @@ if(!config.debug) routes.use(minify());
 // request pathways
 routes.get('/', function(req, res, next){
         res.sendFile(__dirname + '/public/index.html');
+      })
+      .get('/party', function(req, res, next){
+        res.sendFile(__dirname + '/public/observer.html');
       })
       .use('/', express.static(__dirname + '/public'));
 
