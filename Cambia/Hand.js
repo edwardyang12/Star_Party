@@ -1,7 +1,10 @@
-const deck = require ('./Deck.js');
+var a = require ('./Deck.js');
+
+const JOJO = new a.Deck();
+console.log(JOJO.getDeck);
 
 class Hand{
-  //each persons hand and should remove the stuff from deck
+  //each person has a hand and should remove the stuff from deck
   //add function for playing card from hand
   //add rest of rules for Cambia
 }
