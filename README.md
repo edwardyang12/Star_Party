@@ -1,3 +1,3 @@
 # STAR PARTY
 
-it's time to party
+Simple web app with multiple mini games implemented using a custom built physics engine
